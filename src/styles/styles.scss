@@ -1,0 +1,15 @@
+//----------------------------------------------
+//THIS FILE USE TO IMPORT SCSS, DO NOT CODE HERE
+//----------------------------------------------
+@use 'variable' as *;
+@use 'mixin' as *;
+
+@import './body.scss';
+@import './page/auth/login.scss';
+@import './components/buttonSolid.scss';
+@import './components/form.scss';
+@import './components/buttonOutline.scss';
+@import './components/header.scss';
+@import './page/home.scss';
+@import './components/sidebar.scss';    
+@import './components/profile.scss';

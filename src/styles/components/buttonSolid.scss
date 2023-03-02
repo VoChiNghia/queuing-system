@@ -1,0 +1,16 @@
+.button-solid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:$fs-2;
+        height: 40px;
+        width: 162px;
+        left: 215px;
+        top: 511px;
+        border-radius: 8px;
+     
+        background: $btn-bg;
+        border: none;
+        color: $color-grey-light-1;
+
+}

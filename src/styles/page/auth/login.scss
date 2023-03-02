@@ -1,0 +1,39 @@
+.login{
+    display: flex;
+    align-items: center;
+    background-color:#f6f6f6;
+    height: 100vh;
+    
+
+    &-form{
+        flex: 1;
+     
+
+      
+    }
+    &-bg{
+        flex: 2;
+        background: #fff;
+        height: 100vh;
+        .img{
+            position: relative;
+            &-info{
+                position: absolute;
+                right: 50%;
+                top: 50%;
+                transform: translateX(90%);
+                p{
+                    color: $color-orange;
+                    font-size:$fs-7;
+                   
+                }
+                h1{
+                    font-weight: 800;
+                    color: $color-orange;
+                    font-size:$fs-8;
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+}
