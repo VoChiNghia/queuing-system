@@ -1,5 +1,6 @@
 import { BellOutlined } from '@ant-design/icons'
 import React from 'react'
+import HeaderProfile from './HeaderProfile'
 
 const img = require('../assets/img/bg2.jpg')
 type Props = {}
@@ -13,16 +14,7 @@ const Header = (props: Props) => {
             </div>
         </div>
         <div className="header__right">
-            <div className="header__right-noti">
-            <BellOutlined className='bell-icon'/>
-            </div>
-            <div className="header__right-info">
-                <img src={img} alt="" />
-                <div className='name'>
-                    <p>Xin chào</p>
-                    <h2>Võ Chí nghĩa</h2>
-                </div>
-            </div>
+           <HeaderProfile/>
         </div>
     </div>
   )

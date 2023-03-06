@@ -1,0 +1,36 @@
+.line-chart{
+    background-color: white;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: $boxShadow;
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+        &__left{
+            h2{
+                margin:0;
+            }
+            p{
+                color:$color-gray-light-2
+            }
+        }
+        &__right{
+            display: flex;
+            align-items: center;
+            h2{
+                margin:0 10px;
+                font-weight: 600;
+                font-size: 20px;
+            }
+            select{
+                border:$border;
+                padding:10px 10px;
+                outline: none;
+                border-radius:8px;
+                color: gray;
+            }
+        }
+    }
+}

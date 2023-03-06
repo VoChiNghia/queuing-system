@@ -6,19 +6,31 @@ import {AppstoreOutlined,
     BarChartOutlined,
     ImportOutlined
 } from '@ant-design/icons'
+import { signOut } from 'firebase/auth'
+import { auth } from '../configFirebase'
+import { removeStore } from '../util/config'
+import { history } from '../App'
+import { useNavigate } from 'react-router-dom'
 type Props = {}
 
 const logo = require('../assets/img/Grouplogo.png')
 
 const SideBar = (props: Props) => {
+
+  const navigate = useNavigate()
+  const handleLogout = () => {
+    removeStore('email')
+    navigate('/login')
+    
+  }
   return (
     <div className='sidebar'>
        <div className="sidebar-wrapper">
        <div className="sidebar__logo">
-            <img src='' alt="" />
+            <img src={logo} alt="" />
         </div>
         <ul className='sidebar__list'>
-            <li className='sidebar__list-item'>
+            <li className='sidebar__list-item active'>
             <AppstoreOutlined className='icon'/>
             <p>Dashboard</p>
             </li>
@@ -45,7 +57,7 @@ const SideBar = (props: Props) => {
         </ul>
        </div>
        <div className='btn-logout'>
-            <button>
+            <button onClick={handleLogout}>
                 <span><ImportOutlined /></span>
                 <p>Đăng xuất</p>
                 </button>

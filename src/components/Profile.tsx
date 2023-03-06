@@ -1,3 +1,4 @@
+import { CameraOutlined } from '@ant-design/icons'
 import React from 'react'
 
 type Props = {}
@@ -6,7 +7,10 @@ const Profile = (props: Props) => {
   return (
     <div className='profile'>
         <div className='profile-img'>
+            <div className='img'>
             <img src={logo} alt="" />
+            <CameraOutlined className='img-icon' />
+            </div>
             <h1>Võ Chí Nghĩa</h1>
         </div>
         <div className="profile-info">
